@@ -1,0 +1,55 @@
+.home-flex-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 15vh;
+}
+
+.about-me-info {
+	margin-left: 10%;
+	max-width: 500px;
+	font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.landing-page {
+	height: 60vh;
+}
+
+.HomePage {
+	margin-bottom: 0;
+}
+
+.pic-of-me {
+	width: auto;
+	height: 600px;
+}
+
+.about-me-info > h1 {
+	font-weight: 500;
+	font-size: 60px;
+}
+
+.graph {
+	background-color: #efefef;
+}
+
+@media screen and (max-width: 900px) {
+	.home-flex-container {
+		flex-direction: column;
+		margin-top: 5vh;
+	}
+	.pic-of-me {
+		margin: auto;
+		max-width: 400px;
+		height: auto;
+	}
+	.about-me-info {
+		font-size: 15px;
+		margin: auto;
+		text-align: center;
+	}
+	.about-me-info > h1 {
+		font-size: 30px;
+	}
+}

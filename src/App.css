@@ -1,33 +1,97 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background: rgb(82,27,27);
+  background: radial-gradient(circle, rgba(82,27,27,1) 32%, rgba(17,31,34,1) 80%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.below-header {
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navbar {
+  display: inline;
+  /* position: fixed; */
+  top: 0px;
+  width: 100%;
+}
+
+.navbarul {
+  list-style-type: none;
+}
+
+.navitem {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navitem > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.navicon {
+  font-size: 30px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.navitem > a:hover {
+  color: grey;
+}
+
+.my-icon {
+  display: none;
+  padding: 10px;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.rightside {
+  float: right;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarul {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .my-icon {
+    /* float: right; */
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rightside {
+    float: none;
+    margin-left: auto;
+  }
+  .active {
+    display: block;
+  }
+  .activeitems {
+    display: block;
+    /* text-align: left; */
+    background: darkgray;
+    flex: 1;
+  }
+  .navbarflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .navicon {
+    display: block;
   }
 }
