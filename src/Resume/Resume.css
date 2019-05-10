@@ -13,8 +13,16 @@
 
 #Resume {
     color: black;
-    background-color: white;
+    background-color: #efefef;
     border-radius: 15px;
+}
+
+#resume-look {
+    margin: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .tc {

@@ -5,7 +5,7 @@ class Resume extends Component {
     render() {
         return (
             <div id='Resume'>
-                {/* <h1 className='tc resume-headerofheaders'>Resume</h1> */}
+                <div id='resume-look'>
                 
                 <h2 className='tc resume-header'>Education</h2>
                 <div className='resume-flex-container'>
@@ -74,6 +74,7 @@ class Resume extends Component {
                         </p>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
