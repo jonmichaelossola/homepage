@@ -38,19 +38,18 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* Here can be the header */}
         <Particles 
           className='particles'
           params={particlesoptions}/>
         <nav className='navbar'>
           <i className='my-icon fa fa-bars' onClick={this.showOptions}></i>
           <ul className='navbarul'>
-            <li className='navitem'><a to={'#HomePage'} className=''>Home</a></li>
-            <li className='navitem'><a to={'#projects'} className=''>Projects</a></li>
+            <li className='navitem'><a href={'#HomePage'} className=''>Home</a></li>
+            <li className='navitem'><a href={'#Projects'} className=''>Projects</a></li>
             <li className='navitem'><a href={'#Resume'} className=''>Resume</a></li>
-            <li className='navitem rightside'><a target='_blank' href={'https://github.com/jonmichaelossola'}><i className='fab fa-github navicon'></i></a></li>
-            <li className='navitem rightside'><a target='_blank' href={'https://www.linkedin.com/in/jon-michael-ossola-90a898161/'}><i className='fab fa-linkedin-in navicon'></i></a></li>
-            <li className='navitem rightside'><a target='_blank' href={'mailto:jm.ossola24@gmail.com'}><i className='fas fa-envelope-open-text navicon'></i></a></li>
+            <li rel='noopener noreferrer' className='navitem rightside'><a target='_blank' href={'https://github.com/jonmichaelossola'}><i className='fab fa-github navicon'></i></a></li>
+            <li rel='noopener noreferrer' className='navitem rightside'><a target='_blank' href={'https://www.linkedin.com/in/jon-michael-ossola-90a898161/'}><i className='fab fa-linkedin-in navicon'></i></a></li>
+            <li rel='noopener noreferrer' className='navitem rightside'><a target='_blank' href={'mailto:jm.ossola24@gmail.com'}><i className='fas fa-envelope-open-text navicon'></i></a></li>
           </ul>
         </nav>
         <HomePage />
