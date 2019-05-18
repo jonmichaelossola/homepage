@@ -57,15 +57,15 @@ var myOptions = {
 class Graph extends Component {
     render() {
         return (
-            <div className='chart-wrapper'>
+            <div data-wow-offset="80" data-wow-delay='.5s' className='chart-wrapper fadeInRight wow'>
                 <Chart
-				    width={'100%'}
-				    chartType="BarChart"
-				    loader={<div>Loading Chart</div>}
-				    data={myData}
-				    options={myOptions}
-				    legendToggle
-				/>
+				          width={'100%'}
+				          chartType="BarChart"
+				          loader={<div>Loading Chart</div>}
+				          data={myData}
+				          options={myOptions}
+				          legendToggle
+				        />
             </div>
         );
     }

@@ -1,80 +1,102 @@
 import React, {Component} from 'react';
 import './Resume.css'
+import LineGraph from './Line-Graph.png';
+import ResumeCard from './Resume-Card/Resume-Card';
+
+const education = [
+    {
+        title: 'Brigham Young University - Idaho',
+        company: 'Computer Science - GPA 3.9',
+        date: 'August 2017 - August 2021',
+        description: 'Completed courses from Web Development to Back End software development. Graduation date set for August 2021'
+    },
+    {
+        title: 'Web Development: Zero to Mastery',
+        company: 'Udemy',
+        date: 'February 2019 - May 2019',
+        description: 'Got certificate after watching 32 hours of videos in topics like React.js, Node, and other topics.'
+    }
+]
+
+const experience = [
+    {
+        title: 'Software Engineering Tutor',
+        company: 'Brigham Young University - Idaho',
+        date: 'August 2018 - January 2018',
+        description: 'Helped students in one on one sessions to tackle problems and deepen understanding of computer science topics.'
+    },
+    {
+        title: 'Web Developer / Maintenance',
+        company: 'Electriconnection',
+        date: 'January 2019 - June 2019',
+        description: 'Created Python scripts to sort data for Magento eCommerce platform'
+    },
+    {
+        title: 'Software Developer Apprentice',
+        company: 'Techtonic',
+        date: 'June 2019 - present',
+        description: 'Spent three months in classroom learning different skills such as Google Cloud Platform, worked in teams for three months applying skills and working on real client projects.'
+    }
+]
 
 class Resume extends Component {
     render() {
         return (
-            <div id='Resume'>
-                <div id='resume-look'>
-                
-                <h2 className='tc resume-header'>Education</h2>
-                <div className='resume-flex-container'>
-                    <div className='resume-description2'>
-                        <h2 className='description-header'>Brigham Young University - Idaho</h2>
-                        <p>2017-2021</p>
-                    </div>
-                    <div className='resume-description'>
-                        <h3 className='description-header2'>Computer Science</h3>
-                        <p>GPA: 3.9</p>
-                        <p>Working towards undergraduate in computer science. Completed courses in Web Development, 
-                            Procedural Programming, Object Oriented Programming, Data Structures, as well as courses
-                            like Calculus and other courses.
-                        </p>
-                    </div>
-                </div>
-                <div className='resume-flex-container'>
-                    <div className='resume-description2'>
-                        <h2 className='description-header'>Udemy</h2>
-                    </div>
-                    <div className='resume-description'>
-                        <h3 className='description-header2'>The Complete Web Developer in 2019: Zero to Mastery</h3>
-                        <p>Through this course, I learned skills such as Node.js and React.js, advanced
-                            CSS concepts, And Postgres SQL.
-                        </p>
-                    </div>
-                </div>
+            <div className='resume-component'>
+                <h2 className='tc resume-header'>Education/Experience</h2>
+                <div className='resume-grid'>
+                    <img className='line-graph' alt='line in graph' src={LineGraph} height='1000px' width='auto'/>
 
-                <h2 className='tc resume-header'>Experience</h2>
-                <div className='resume-flex-container'>
-                    <div className='resume-description2'>
-                        <h2 className='description-header'>Techtonic</h2>
-                        <p>Current</p>
+                    <div className='education-1 fadeInLeft wow'>
+                        <ResumeCard 
+                            title={education[0].title} 
+                            company={education[0].company} 
+                            date={education[0].date} 
+                            description={education[0].description} 
+                            sb={'resume-card sbright'}
+                            />
                     </div>
-                    <div className='resume-description'>
-                        <h3 className='description-header2'>Software Developer Apprentice</h3>
-                        <p>There are two seperate parts to this apprenticeship. The 12 week program consists of classroom
-                            learning where apprentices learn skills such as Test Driven Development, Solutions Architecture,
-                            Serverless Application Models, Google Cloud Platform and Firebase, Relational Databases, Web API's
-                            and REST Interfaces.
-                        </p>
+
+                    <div className='experience-1 fadeInRight wow'>
+                        <ResumeCard 
+                            title={experience[0].title} 
+                            company={experience[0].company} 
+                            date={experience[0].date} 
+                            description={experience[0].description} 
+                            sb={'resume-card sbleft'}
+                        />
+                    </div>
+
+                    <div className='education-2 fadeInLeft wow'>
+                        <ResumeCard 
+                            title={education[1].title}
+                            company={education[1].company}
+                            date={education[1].date}
+                            description={education[1].description}
+                            sb={'resume-card sbright'}
+                        />
+                    </div>
+
+                    <div className='experience-2 fadeInRight wow'>
+                        <ResumeCard 
+                            title={experience[1].title}
+                            company={experience[1].title}
+                            date={experience[1].date}
+                            description={experience[1].description}
+                            sb={'resume-card sbleft'}
+                        />
+                    </div>
+
+                    <div className='experience-3 fadeInRight wow'>
+                        <ResumeCard 
+                            title={experience[2].title}
+                            company={experience[2].company}
+                            date={experience[2].date}
+                            description={experience[2].description}
+                            sb={'resume-card sbleft'}
+                        />
                     </div>
                 </div>
-                <div className='resume-flex-container'>
-                    <div className='resume-description2'>
-                        <h2 className='description-header'>ElectriConnection</h2>
-                        <p>February 2019 - June 2019</p>
-                    </div>
-                    <div className='resume-description'>
-                        <h3 className='description-header2'>Web Devloper/Maintenance</h3>
-                        <p>Created Python scripts to organize masses of data to be able to upload to the website in Magento
-                            platform. Created web scraper using BeautifulSoup module to compare prices of other similair
-                            products.
-                        </p>
-                    </div>
-                </div>
-                <div className='resume-flex-container'>
-                    <div className='resume-description2'>
-                        <h2 className='description-header'>Brigham Young University - Idaho</h2>
-                        <p>September 2018 - December 2018</p>
-                    </div>
-                    <div className='resume-description'>
-                        <h3 className='description-header2'>Tutor</h3>
-                        <p>Worked in teams with students to write and debug C++ code. Some of these projects included
-                            a Sudoku project, a calendar project, and a mad lib parser.
-                        </p>
-                    </div>
-                </div>
-            </div>
             </div>
         );
     }

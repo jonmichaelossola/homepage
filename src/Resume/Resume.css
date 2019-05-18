@@ -1,61 +1,92 @@
-.resume-flex-container {
-    display: flex;
-    justify-content: center;
-}
-
-.resume-description {
-    width: 40%;
-}
-
-.resume-description2 {
-    width: 30%;
-}
-
-#Resume {
-    color: black;
-    background-color: #efefef;
-    border-radius: 15px;
-}
-
-#resume-look {
-    margin: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    box-shadow: 3px 3px 5px 6px #ccc;
-}
-
 .tc {
     text-align: center;
 }
 
+.resume-component {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
 .resume-header {
+    color: black;
     font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
-.description-header {
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
+.resume-grid {
+    display: grid;
+    grid-template-rows: 400px 300px 400px;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-areas: "education-1 map experience-1"
+                         "education-2 map experience-2"
+                         ".           map experience-3";
+    grid-gap: 0px;
 }
 
-@media screen and (max-width: 800px) {
-    .resume-flex-container {
-        flex-direction: column;
-        align-items: center;
+.line-graph {
+    grid-area: map;
+}
+
+.education-1 {
+    grid-area: education-1;
+    height: 200px;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.education-2 {
+    grid-area: education-2;
+    margin-top: 190px;
+    margin-left: auto;
+}
+
+.experience-1 {
+    grid-area: experience-1;
+    margin-top: 180px;
+}
+
+.experience-2 {
+    grid-area: experience-2;
+    margin-top: 50px;
+}
+
+.experience-3 {
+    grid-area: experience-3;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 600px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "education-1"
+                             "education-2"
+                             "experience-1"
+                             "experience-2"
+                             "experience-3";
     }
-    .resume-description {
-        width: 90%;
-        margin: auto;
+    .line-graph {
+        display: none;
     }
-    .resume-description2 {
-        width: 90%;
-        margin: auto;
+    .education-1 {
+        margin-top: 15px;
+        margin-right: auto;
+    }
+    .education-2 {
+        margin-top: 15px;
+        margin-right: auto;
+    }
+    .experience-1 {
+        margin-top: 15px;
+    }
+    .experience-2 {
+        margin-top: 15px;
+    }
+    .experience-3 {
+        margin-top: 15px;
     }
     .resume-header {
-        font-size: 35px;
+        font-size: 25px;
     }
 }

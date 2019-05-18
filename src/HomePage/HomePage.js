@@ -6,7 +6,7 @@ class HomePage extends Component {
     render() {
         return (
             <div id='HomePage' className='HomePage'>
-                <div className='home-flex-container landing-page'>
+                <div data-wow-delay='1.6s' className='home-flex-container landing-page fadeInDown wow'>
                     <img src={mySelfie} alt='Me' className='pic-of-me'/>
                     <div className='about-me-info'>
                     	<h1 className='body-header'>Welcome To My Webpage</h1>
