@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import faceApp from './face-recoginzer-app.png';
+import Asteroids from './asteroids.jpg';
+import Skeet from './skeet.png'
+
 import './Projects.css'
+import Project from './Project/Project';
 
 class Projects extends Component {
     render() {
         return (
             <div id='Projects' data-wow-delay='.3s' data-wow-offset="80" className='Projects-component wow zoomIn'>
-                <h2 className='projects-header'>My Projects</h2>
+                <h2 className='projects-header'>Projects</h2>
                 <div className='projects-container'>
-                    <div className='project-container'>
-                        <h5>Facial Recognition Web App</h5>
-                        <a rel='noopener noreferrer' target='_blank' href='https://jonmichael-smart-brain.herokuapp.com/'>
-                            <img className='project-image' src={faceApp} alt='My Face Recognition App' />
-                        </a>
-                    </div>
+                    <Project name={'Facial Recognition Web App'} imgSrc={faceApp} linkToProject={'https://jonmichael-smart-brain.herokuapp.com/'} />
+                    <Project name={'Asteroids Game (C++)'} imgSrc={Asteroids} linkToProject={'https://github.com/jonmichaelossola/School-Assignments/tree/master/Object-Oriented%20Programming%20C%2B%2B/asteroids'} />
+                    <Project name={'Skeet Game (C++)'} imgSrc={Skeet} linkToProject={'https://github.com/jonmichaelossola/School-Assignments/tree/master/Object-Oriented%20Programming%20C%2B%2B/skeet'} />
                 </div>
             </div>
         );
