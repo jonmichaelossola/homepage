@@ -26,7 +26,7 @@ var myOptions = {
     fontName: 'Times New Roman',
     animation: {
       startup: true,
-      duration: 1000,
+      duration: 2000,
       easing: 'out'
     },
     hAxis: {
@@ -57,7 +57,7 @@ var myOptions = {
 class Graph extends Component {
     render() {
         return (
-            <div data-wow-offset="80" data-wow-delay='.5s' className='chart-wrapper fadeInRight wow'>
+            <div data-wow-offset="80" data-wow-delay='.5s' className='chart-wrapper '>
                 <Chart
 				          width={'100%'}
 				          chartType="BarChart"

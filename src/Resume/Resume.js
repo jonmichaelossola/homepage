@@ -42,7 +42,7 @@ const experience = [
 class Resume extends Component {
     render() {
         return (
-            <div className='resume-component'>
+            <div id='Resume' className='resume-component'>
                 <h2 className='tc resume-header'>Education/Experience</h2>
                 <div className='resume-grid'>
                     <img className='line-graph' alt='line in graph' src={LineGraph} height='1000px' width='auto'/>
