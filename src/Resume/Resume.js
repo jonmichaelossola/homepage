@@ -53,7 +53,7 @@ class Resume extends Component {
                             company={education[0].company} 
                             date={education[0].date} 
                             description={education[0].description} 
-                            sb={'resume-card sbright'}
+                            sb={'resume-card'}
                             />
                     </div>
 
@@ -63,7 +63,7 @@ class Resume extends Component {
                             company={experience[0].company} 
                             date={experience[0].date} 
                             description={experience[0].description} 
-                            sb={'resume-card sbleft'}
+                            sb={'resume-card'}
                         />
                     </div>
 
@@ -73,7 +73,7 @@ class Resume extends Component {
                             company={education[1].company}
                             date={education[1].date}
                             description={education[1].description}
-                            sb={'resume-card sbright'}
+                            sb={'resume-card'}
                         />
                     </div>
 
@@ -83,7 +83,7 @@ class Resume extends Component {
                             company={experience[1].title}
                             date={experience[1].date}
                             description={experience[1].description}
-                            sb={'resume-card sbleft'}
+                            sb={'resume-card'}
                         />
                     </div>
 
@@ -93,7 +93,7 @@ class Resume extends Component {
                             company={experience[2].company}
                             date={experience[2].date}
                             description={experience[2].description}
-                            sb={'resume-card sbleft'}
+                            sb={'resume-card'}
                         />
                     </div>
                 </div>

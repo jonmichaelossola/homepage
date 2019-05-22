@@ -11,6 +11,7 @@
     font-size: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px 6px #ccc;
+    margin: 10px;
 }
 
 /* Make images grow on hover. */
@@ -27,7 +28,7 @@
 }
 
 .project-image {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 

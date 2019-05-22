@@ -6,6 +6,7 @@ import Projects from './Projects/Projects.js';
 import HomePage from './HomePage/HomePage.js';
 import Particles from 'react-particles-js';
 import Graph from './HomePage/Graph/Graph.js';
+import Footer from './Footer/Footer.js';
 import './App.css';
 
 import WOW from 'wowjs';
@@ -42,6 +43,7 @@ class App extends Component {
           </div>
           <Projects />
         </div>
+        <Footer />
       </div>
     );
   }
