@@ -6,3 +6,12 @@
 	background: black;
 	font-size: 15px;
 }
+
+.footer-flex-container > a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-flex-container > a:hover {
+	color: orangered;
+}

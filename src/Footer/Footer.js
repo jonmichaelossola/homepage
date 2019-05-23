@@ -5,9 +5,9 @@ const Footer = () => {
 	return (
 		<div className='footer-flex-container'>
 			<h4>Contact Info ></h4>
-			<p>303.408.9805</p>
-			<p>jm.ossola24@gmail.com</p>
-			<p>Jon Michael Ossola</p>
+			<a href='tel:303-408-9805'><h4>303.408.9805</h4></a>
+			<a href='mailto:jm.ossola24@gmail.com'><h4>jm.ossola24@gmail.com</h4></a>
+			<h4>Jon Michael Ossola</h4>
 		</div>
 	);
 }
