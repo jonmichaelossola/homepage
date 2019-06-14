@@ -54,21 +54,68 @@ var myOptions = {
     legend: { position: 'none' }
   };
 
+// class Graph extends Component {
+//     render() {
+//         return (
+//             <div data-wow-offset="80" data-wow-delay='.5s' className='chart-wrapper '>
+//                 <Chart
+// 				          width={'100%'}
+// 				          chartType="BarChart"
+// 				          loader={<div>Loading Chart</div>}
+// 				          data={myData}
+// 				          options={myOptions}
+// 				          legendToggle
+// 				        />
+//             </div>
+//         );
+//     }
+// }
+
 class Graph extends Component {
-    render() {
-        return (
-            <div data-wow-offset="80" data-wow-delay='.5s' className='chart-wrapper '>
-                <Chart
-				          width={'100%'}
-				          chartType="BarChart"
-				          loader={<div>Loading Chart</div>}
-				          data={myData}
-				          options={myOptions}
-				          legendToggle
-				        />
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className='graph'>
+        <div className='chart-wrapper'>  
+          <h2 className='tc graph-header'>Skills</h2>
+
+          <h3>Git and GitHub</h3>
+          <div className='container'>
+            <div className='skills git wow fadeIn'></div>
+          </div>
+
+          <h3>HTML, CSS, JavaScript</h3>
+          <div className='container'>
+            <div data-wow-delay='.2s' className='skills html wow fadeIn'></div>
+          </div>
+
+          <h3>React and Redux</h3>
+          <div className='container'>
+            <div data-wow-delay='.5s' className='skills react wow fadeIn'></div>
+          </div>
+
+          <h3>Postgres SQL</h3>
+          <div className='container'>
+            <div data-wow-delay='.8s' className='skills sql wow fadeIn'></div>
+          </div>
+
+          <h3>Python</h3>
+          <div className='container'>
+            <div data-wow-delay='1s' className='skills python wow fadeIn'></div>
+          </div>
+
+          <h3>Java</h3>
+          <div className='container'>
+            <div data-wow-delay='1.2s' className='skills java wow fadeIn'></div>
+          </div>
+
+          <h3>C++</h3>
+          <div className='container'>
+            <div data-wow-delay='1.4s' className='skills c wow fadeIn'></div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Graph;

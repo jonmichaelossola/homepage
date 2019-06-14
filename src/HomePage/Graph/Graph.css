@@ -1,5 +1,37 @@
 .chart-wrapper {
-	display: flex;
-	justify-content: center;
-	margin-top: 10vh;
+	width: 80%;
+	color: black;
+	margin: 0px auto 0px auto;
+	padding: 50px 0px 50px 0px;
 }
+
+.graph-header {
+	font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.graph {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	background-color: #ddd;
+}
+
+.skills {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 20px;
+}
+
+.git {width: 93%; background-color: #00BFFF;}
+.html {width: 87%; background-color: #00BFFF;}
+.react {width: 86%; background-color: #00BFFF;}
+.sql {width: 90%; background-color: #00BFFF;}
+.python {width: 90%; background-color: #00BFFF;}
+.java {width: 83%; background-color: #00BFFF;}
+.c {width: 90%; background-color: #00BFFF;}
